@@ -1,0 +1,14 @@
+{% extends 'main/base.html'%}
+
+
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+   <h1>Все гавнецо</h1>
+    {% for el in recipies %}
+        <a href="{% url 'recipe' el.pk %}">{{ el.title }}</a><br>
+    {% endfor %}
+{% endblock %}

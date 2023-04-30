@@ -1,0 +1,18 @@
+{% extends 'main/base.html'%}
+
+
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+
+
+{% block content %}
+   <h1>Главное гавнецо</h1>
+    {% for el in recipies %}
+        <h3>{{ el.title }}</h3>
+        <p>{{ el.describe }}</p>
+        <img src="{{ el.image.url }}" height="200px" width="200px">
+    {% endfor %}
+{% endblock %}

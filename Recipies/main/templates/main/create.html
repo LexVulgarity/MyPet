@@ -1,0 +1,31 @@
+{% extends 'main/base.html'%}
+
+
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <div class="cont">
+        <form method="post">
+            {% csrf_token %}
+
+
+            <div class="cont-forma">
+                <div class="cont-forma1">
+                    <h4>Title</h4>
+                    {{ form.title }}
+                </div>
+                <div class="cont-forma2 form-control">
+                    <h4>Describe</h4>
+                    {{ form.describe }}
+                </div>
+            </div>
+            <div class="ad_btn-cont">
+                <button type="submit" class="add_btn">ADD</button>
+            </div>
+            <span>{{ error }}</span>
+        </form>
+    </div>
+{% endblock %}

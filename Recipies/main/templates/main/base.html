@@ -1,0 +1,39 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/header_footer.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header_logo">
+        <h1 class="header_logo-inner">HERITAGE</h1>
+        <h5>project</h5>
+    </div>
+    <header class="container-fluid ">
+            <div class="container d-flex">
+
+                <nav class="menu">
+                    <a href="{% url 'home' %}">HOME</a>
+                    <a href="{% url 'about' %}">ABOUT ME</a>
+                    <a href="{% url 'create' %}">ADD RECIPE</a>
+                    <a href="{% url 'all' %}">ALL RECIPIES</a>
+                </nav>
+                <form name="search" action="#" method="get">
+                    <div class="d-flex">
+                        <input type="submit" name="search" value="">
+                        <input type="text" name="search" placeholder="FIND A RECIPE">
+                    </div>
+                </form>
+            </div>
+    </header>
+
+    {% block content %}{% endblock %}
+</body>
+</html>
