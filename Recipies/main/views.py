@@ -6,7 +6,8 @@ from .forms import RecipeForm
 
 recipies = Recipe.objects.all()
 def index(request):
-    return render(request,'main/index.html', {'title':'Главная страница сайта','recipies':recipies})
+    rec=recipies[::-1]
+    return render(request,'main/index.html', {'title':'Главная страница сайта','recipies':rec[:3]})
 
 
 def about(request):

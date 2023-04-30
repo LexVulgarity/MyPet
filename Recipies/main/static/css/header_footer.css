@@ -87,9 +87,14 @@ header .container .menu a {
     padding:50px 50px;
 }
 
+.t-centr{
+    text-align:center;
+    vertical-align: center;
+}
 
 
-header form div {
+
+/*header form div {
     justify-content: space-between;
     padding: 9px 30px;
     border: 1px solid #c2c2c2;
@@ -145,7 +150,7 @@ header form div input[type="text"]{
     padding-top: 30px;
     padding-bottom: 55px;
 }
-
+*/
 .cont{
     margin-top: 20px;
 }
