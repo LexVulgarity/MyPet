@@ -1,3 +1,4 @@
+import random, time
 from django.shortcuts import render, redirect
 from .models import Recipe
 from .forms import RecipeForm
@@ -6,8 +7,22 @@ from .forms import RecipeForm
 
 recipies = Recipe.objects.all()
 def index(request):
-    rec=recipies[::-1]
-    return render(request,'main/index.html', {'title':'Главная страница сайта','recipies':rec[:3]})
+    def timer():
+        first=0
+        sec = 0
+        if first==0:
+            return True
+        else:
+            while sec < 60:
+                time.sleep(1)
+                sec += 30
+                first=1
+            return True
+    rec=recipies[:]
+    randrec=0
+    if timer():
+        randrec=random.choice(rec)
+    return render(request,'main/index.html', {'title':'Главная страница сайта','recipies':rec[:3],'randrec':randrec})
 
 
 def about(request):
