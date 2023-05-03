@@ -1,28 +1,19 @@
-import random, time
+import random
 from django.shortcuts import render, redirect
 from .models import Recipe
 from .forms import RecipeForm
+from .static.modules.funcs import timer
 
 
 
-recipies = Recipe.objects.all()
+
 def index(request):
-    def timer():
-        first=0
-        sec = 0
-        if first==0:
-            return True
-        else:
-            while sec < 60:
-                time.sleep(1)
-                sec += 30
-                first=1
-            return True
+    recipies = Recipe.objects.all()
     rec=recipies[:]
     randrec=0
     if timer():
         randrec=random.choice(rec)
-    return render(request,'main/index.html', {'title':'Главная страница сайта','recipies':rec[:3],'randrec':randrec})
+    return render(request,'main/index.html', {'title':'Главная страница сайта','recipies':rec[:3],'randrec':random.choice(rec)})
 
 
 def about(request):
@@ -30,6 +21,7 @@ def about(request):
 
 
 def allrec(request):
+    recipies = Recipe.objects.all()
     return render(request,'main/all-rec.html', {'recipies':recipies})
 
 
@@ -46,9 +38,10 @@ def show_recipe(request,recipe_id):
 def create(request):
     error=''
     if request.method == 'POST':
-        form = RecipeForm(request.POST)
+        form = RecipeForm(request.POST,request.FILES)
         if form.is_valid():
-            form.save()
+            recipe = form.save()
+            recipe.image = request.FILES['image']
             return redirect('home')
         else:
             error = 'Форма была неверной'

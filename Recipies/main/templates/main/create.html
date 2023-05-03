@@ -8,7 +8,7 @@
 
 {% block content %}
     <div class="cont">
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
 
 
@@ -22,6 +22,12 @@
                     {{ form.describe }}
                 </div>
             </div>
+
+
+                {{ form.image }}
+
+
+
 
             <div class="ad_btn-cont">
                 <button type="submit" class="add_btn">ADD RECIPE</button>

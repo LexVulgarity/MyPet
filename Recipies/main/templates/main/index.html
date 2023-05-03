@@ -20,7 +20,7 @@
 <div class="recipe">
     <div class="container">
         <div class="opisanie t-centr">
-            <img src="{{el.image.url}}" height="400px" width="400px">
+            <img  src="{{el.image.url}}" height="400px" width="400px">
             <div class="opisanie-inner title ">
                 <p>{{el.title}}</p>
             </div>
@@ -29,10 +29,11 @@
 </div>
 {% endfor %}--!>
 
+
 <div class="recipe">
     <div class="container">
         <div class="opisanie t-centr">
-            <img src="{{randrec.image.url}}" height="400px" width="400px">
+            <img id="image" src="{{randrec.image.url}}" height="400px" width="400px">
             <div class="opisanie-inner title ">
                 <p>{{randrec.title}}</p>
             </div>

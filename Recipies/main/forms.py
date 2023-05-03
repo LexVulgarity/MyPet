@@ -6,7 +6,7 @@ class RecipeForm(ModelForm):
     class Meta:
         model = Recipe
         fields = ['title','describe','image']
-        '''widgets = {
+        widgets = {
             'title':TextInput(attrs={
                 'class':'form-control',
                 'placeholder':'Name of recipe',
@@ -15,4 +15,7 @@ class RecipeForm(ModelForm):
                 'class': 'form-control',
                 'placeholder': 'Describe',
             }),
-        }'''
+            'image': FileInput(attrs={
+                'class': 'form-control-file'
+            })
+        }
