@@ -50,3 +50,5 @@ def create(request):
     context = {'form': form,'error':error}
     return render(request,'main/create.html',context)
 
+
+
