@@ -2,6 +2,7 @@ from .models import Recipe
 from django.forms import ModelForm, TextInput, Textarea,FileInput
 
 
+
 class RecipeForm(ModelForm):
     class Meta:
         model = Recipe
@@ -16,6 +17,6 @@ class RecipeForm(ModelForm):
                 'placeholder': 'Describe',
             }),
             'image': FileInput(attrs={
-                'class': 'form-control-file'
+                'class': 'form-control'
             })
         }

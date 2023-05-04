@@ -1,4 +1,7 @@
 import time
+
+
+
 #Таймер для обновления рецепта дня
 def timer():
     first = 0
