@@ -1,0 +1,47 @@
+[33mcommit 499d0ecfe15a2c0bf3980bca8636ce989d10f6d3[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: LexVulgarity <chromweechannelusa@gmail.ru>
+Date:   Wed May 3 16:13:52 2023 +0300
+
+    Branch Update
+
+[33mcommit 08e73efa20c11d30d41ad567736dd427e5c40ad6[m
+Author: LexVulgarity <chromweechannelusa@gmail.ru>
+Date:   Wed May 3 13:58:40 2023 +0300
+
+    Branch Update
+
+[33mcommit aa7b2513821b23f7cf3d7f8e91771e9dce6c9625[m
+Author: LexVulgarity <chromweechannelusa@gmail.ru>
+Date:   Wed May 3 11:30:08 2023 +0300
+
+    Добавил кнопку загрузки картинки, пост появляется сразу после добавления, без перезагрузки сервера
+
+[33mcommit ae60c8b08f15fbf52193245cc59a9fdaf0e369cf[m
+Author: LexVulgarity <chromweechannelusa@gmail.ru>
+Date:   Tue May 2 21:48:36 2023 +0300
+
+    Добавил таймер
+
+[33mcommit 2ab853047879b88844de1ac606eb7bd1ff00a6e6[m
+Author: LexVulgarity <chromweechannelusa@gmail.ru>
+Date:   Sun Apr 30 21:33:43 2023 +0300
+
+    Исправил футер
+
+[33mcommit d111c55f2741dc0cf1b9928fb4f28701bbe0f915[m
+Author: LexVulgarity <chromweechannelusa@gmail.ru>
+Date:   Sun Apr 30 17:18:18 2023 +0300
+
+    Исправил футер
+
+[33mcommit 4ff5b5ed8e4b4558aa8bd1373bb0cf15595aa6ad[m
+Author: LexVulgarity <chromweechannelusa@gmail.ru>
+Date:   Sun Apr 30 17:13:02 2023 +0300
+
+    Добавил какулю
+
+[33mcommit 40e7484e3788e5f9318cbb54cd800d8037e1e73e[m
+Author: LexVulgarity <chromweechannelusa@gmail.ru>
+Date:   Sun Apr 30 16:42:32 2023 +0300
+
+    Работает
