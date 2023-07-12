@@ -22,7 +22,9 @@ def about(request):
 
 def allrec(request):
     recipies = Recipe.objects.all()
-    return render(request,'main/all-rec.html', {'recipies':recipies})
+    recipies1 = recipies[0:len(recipies) //2 ]
+    recipies2 = recipies[len(recipies) // 2:]
+    return render(request,'main/all-rec.html', {'recipies1':recipies1, 'recipies2':recipies2})
 
 
 def show_recipe(request,recipe_id):

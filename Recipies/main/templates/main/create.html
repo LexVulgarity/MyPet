@@ -13,7 +13,7 @@
 
 
             <div class="cont-forma">
-                <div class="cont-forma1">
+                <div class="cont-forma1  form-control">
                     <h4>Title</h4>
                     {{ form.title }}
                 </div>
@@ -23,14 +23,17 @@
                 </div>
             </div>
 
-
+            <div class="cont-forma btn-img">
                 {{ form.image }}
+            </div>
 
+            <div class="cont-forma">
+                <div class="center_btn">
+                    <div class="ad_btn-cont">
+                        <button type="submit" class="add_btn">ADD RECIPE</button>
+                    </div>
+                </div>
 
-
-
-            <div class="ad_btn-cont">
-                <button type="submit" class="add_btn">ADD RECIPE</button>
             </div>
 
             <span>{{ error }}</span>

@@ -7,8 +7,30 @@
 {% endblock %}
 
 {% block content %}
-   <h1>Все гавнецо</h1>
-    {% for el in recipies %}
-        <a href="{% url 'recipe' el.pk %}">{{ el.title }}</a><br>
-    {% endfor %}
+   <h1 class="recipe_name">All recipies</h1>
+    <div class="container-fluid">
+        <div class="spisok_rec">
+            <div class="all_rec">
+                <div class="recipies">
+                    {% for el in recipies1 %}
+                        <div class='link_rec'>
+                            <a href="{% url 'recipe' el.pk %}">{{ el.title }}</a><br>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="recipies">
+                    {% for el in recipies2 %}
+                        <div class='link_rec'>
+                            <a  href="{% url 'recipe' el.pk %}">{{ el.title }}</a><br>
+                        </div>
+
+                    {% endfor %}
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 {% endblock %}

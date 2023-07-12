@@ -8,6 +8,7 @@
     font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;
     font-style: normal;
+
 }
 
 .header_logo {
@@ -27,6 +28,7 @@
     background-color: white;
 }
 
+
 .container {
     width: 100%;
     padding: 44px 94px;
@@ -44,13 +46,25 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     background-color: #eaeaea;
+
 }
+
+
 .menu{
     display:flex;
     justify-content: space-between;
+
 }
+
+.menu_user{
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+
 header .container .menu a {
-    font-size: 0.75em;
+    font-size: 1em;
     text-decoration: none;
     color: black;
     margin: 12.5px;
@@ -187,6 +201,7 @@ body form textarea {
     justify-content: space-between;
     max-width: 1120px;
     margin: auto;
+    margin-top: 100px;
 }
 
 .cont-forma1{
@@ -203,10 +218,50 @@ body form textarea {
     text-align: center;
 }
 
+.center_btn{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+ad_btn-cont{
+    max-width: 500px;
+    margin-top: 50px;
+    decoration: none;
+    display:flex;
+    justify-content: center;
+
+}
+.btn-img{
+    max-width: 1120px;
+    margin-top: 50px;
+    decoration: none;
+}
+
 .add_btn{
     display: flex;
-    align-items: center;
+    justify-content: center;
     max-width: 1120px;
-    margin: auto;
+    margin: 50px;
     decoration: none;
+}
+
+
+
+.all_rec{
+    display: flex;
+     justify-content: space-between;
+
+}
+
+.recipies{
+    margin:50px 200px 50px 200px;
+}
+.link_rec {
+    text-decoration: none;
+    color: black;
+    margin-top: 50px;
+}
+.link_rec a{
+text-decoration: none;
+    color: black;
 }
