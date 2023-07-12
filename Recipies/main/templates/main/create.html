@@ -7,6 +7,7 @@
 {% endblock %}
 
 {% block content %}
+    <h1 class="recipe_name">Add recipe</h1>
     <div class="cont">
         <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
@@ -17,7 +18,7 @@
                     <h4>Title</h4>
                     {{ form.title }}
                 </div>
-                <div class="cont-forma2 form-control">
+                <div class="cont-forma1 form-control">
                     <h4>Describe</h4>
                     {{ form.describe }}
                 </div>

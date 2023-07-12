@@ -110,36 +110,6 @@ header .container .menu a {
     vertical-align: center;
 }
 
-
-
-/*header form div {
-    justify-content: space-between;
-    padding: 9px 30px;
-    border: 1px solid #c2c2c2;
-}
-
-header form div input[type="submit"] {
-    height: 12px;
-    width: 12px;
-    margin-right: 20px;
-    background: url("../Search\ Icon.png");
-    background-size: cover;
-    border: none;
-}
-
-header form div input[type="text"]{
-    font-size: 0.563em;
-    border: none;
-}
-
-@font-face {
-    font-family: 'Playfair Display', serif;
-    font-weight: normal;
-    font-style: normal;
-    src: url("../fonts/PlayfairDisplay-Regular.ttf");
-}
-
-
 .recomend-bg {
    background: url(../Photo.png) center no-repeat;
 }
@@ -251,17 +221,20 @@ ad_btn-cont{
     display: flex;
      justify-content: space-between;
 
+
 }
 
 .recipies{
     margin:50px 200px 50px 200px;
+
 }
 .link_rec {
     text-decoration: none;
     color: black;
     margin-top: 50px;
+
 }
 .link_rec a{
-text-decoration: none;
+    text-decoration: none;
     color: black;
 }
