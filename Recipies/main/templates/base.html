@@ -8,14 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/header_footer.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/slick-theme.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header_logo">
-        <h1 class="header_logo-inner">HERITAGE</h1>
-        <h5>project</h5>
+    <div class="header_logo-cont">
+        <div class="header_logo">
+            <h1 class="header_logo-inner"><a class='logo_link' href="{% url 'home' %}">HERITAGE</a></h1>
+            <h5><a class="logo_link" href="{% url 'home' %}">project</a></h5>
+        </div>
     </div>
     <header class="container-fluid ">
             <div class="container">
@@ -41,12 +45,6 @@
 
 
                 </nav>
-                <!--<form name="search" action="#" method="get">
-                    <div class="d-flex">
-                        <input type="submit" name="search" value="">
-                        <input type="text" name="search" placeholder="FIND A RECIPE">
-                    </div>
-                </form>--!>
             </div>
     </header>
 

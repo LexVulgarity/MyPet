@@ -3,41 +3,47 @@
 
 
 {% block title %}
-{{ title }}
+    {{ title }}
 {% endblock %}
 
 {% block content %}
-    <h1 class="recipe_name">Add recipe</h1>
-    <div class="cont">
-        <form method="post" enctype="multipart/form-data">
-            {% csrf_token %}
+    {% if user.is_authenticated %}
+        <h1 class="recipe_name">Add recipe</h1>
 
+        <div class="cont">
+            <form method="post" enctype="multipart/form-data">
 
-            <div class="cont-forma">
-                <div class="cont-forma1  form-control">
-                    <h4>Title</h4>
-                    {{ form.title }}
-                </div>
-                <div class="cont-forma1 form-control">
-                    <h4>Describe</h4>
-                    {{ form.describe }}
-                </div>
-            </div>
+                {% csrf_token
 
-            <div class="cont-forma btn-img">
-                {{ form.image }}
-            </div>
-
-            <div class="cont-forma">
-                <div class="center_btn">
-                    <div class="ad_btn-cont">
-                        <button id="knopka" type="submit" class="add_btn">ADD RECIPE</button>
+                <div class="cont-forma">
+                    <div class="cont-forma1  form-control">
+                        <h4>Title</h4>
+                        {{ form.title }}
+                    </div>
+                    <div class="cont-forma1 form-control">
+                        <h4>Describe</h4>
+                        {{ form.describe }}
                     </div>
                 </div>
 
-            </div>
+                <div class="cont-forma btn-img">
+                    {{ form.image }}
+                </div>
 
-            <span>{{ error }}</span>
-        </form>
-    </div>
+                <div class="cont-forma">
+                    <div class="center_btn">
+                        <div class="ad_btn-cont">
+                            <button id="knopka" type="submit" class="add_btn">ADD RECIPE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <span>{{ error }}</span>
+
+            </form>
+        </div>
+    {% else %}
+        <h2 class="recipe_name">If you want to add a recipe, you need to&nbsp<a href="{% url 'login' %}">log in</a></h2>
+    {% endif %}
 {% endblock %}
+

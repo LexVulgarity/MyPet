@@ -1,4 +1,9 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
+
+
+
+
 
 class Recipe(models.Model):
     title = models.CharField('Название', max_length=50)
@@ -6,6 +11,7 @@ class Recipe(models.Model):
     image = models.ImageField(upload_to='img/',blank=True)
     rec_time=models.DateTimeField(auto_now_add=True)
     objects = models.Manager()
+
 
 
     def __str__(self):

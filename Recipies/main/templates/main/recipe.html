@@ -1,32 +1,28 @@
 {% extends 'base.html'%}
 
-
-
 {% block title %}
-{{ title }}
+{{ recipe.title }}
 {% endblock %}
 
 {% block content %}
 
-<div class="recipe_name">
-    <h3 class="recipe_name-inner">{{recipe.title}}</h3>
-</div>
+    <div class="recipe_name">
+        <h3 class="recipe_name-inner">{{recipe.title}}</h3>
+    </div>
 
+    <div class="recipe">
+        <div class="container">
+            <div class="opisanie">
+                <img src="/media/{{imge}}" height="400px" width="400px">
+                <div class="opisanie-inner">
+                    <p>Сomposition</p>
 
-
-<div class="recipe">
-    <div class="container">
-        <div class="opisanie">
-            <img src="/media/{{imge}}" height="400px" width="400px">
-            <div class="opisanie-inner">
-                <p>Состав</p>
-                <p>{{recipe.describe}}</p>
-                {{recipe.rec_time}}
+                    <p>{{recipe.describe}}</p>
+                    {{recipe.rec_time}}
+                    {{form.username}}
+                </div>
             </div>
         </div>
-
-
     </div>
-</div>
 
 {% endblock %}
