@@ -248,7 +248,8 @@ ad_btn-cont{
 }
 
 
-.slider .slider_item img{
+.slick-slide img{
+    display: block;
     max-width: 100%;
 
 }
