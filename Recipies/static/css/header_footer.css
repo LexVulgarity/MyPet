@@ -11,24 +11,17 @@
 
 }
 
-.header_logo-cont {
-    margin-top: 100;
-}
 .header_logo {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 .header_logo-inner {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 100px;
+    font-size: 100px
+}
 
-}
-.logo_link{
-    text-decoration: none;
-    color: black;
-}
 .container-fluid {
     max-width: 1120px;
     margin: auto;
@@ -145,7 +138,7 @@ header .container .menu a {
     padding-top: 30px;
     padding-bottom: 55px;
 }
-
+*/
 .cont{
     margin-top: 20px;
 }
@@ -159,8 +152,8 @@ body form textarea {
     border:0;
     box-shadow:4px 4px 10px rgba(0,0,0,0.06);
     height:150px;
-}
 
+}
 .cont-forma1 input {
     margin-top: 50px;
     width: 100%;
@@ -170,6 +163,7 @@ body form textarea {
     border:0;
     box-shadow:4px 4px 10px rgba(0,0,0,0.06);
     height:150px;
+
 }
 
 .cont-forma{
@@ -183,11 +177,9 @@ body form textarea {
 .cont-forma1{
     width:500px;
 }
-
 .cont-forma1 h4{
     text-align: center;
 }
-
 .cont-forma2{
     width:500px;
 }
@@ -223,13 +215,13 @@ ad_btn-cont{
     decoration: none;
 }
 
-.spisok_rec{
-    margin-top: 50px;
-}
+
 
 .all_rec{
     display: flex;
-    justify-content: space-between;
+     justify-content: space-between;
+
+
 }
 
 .recipies{
@@ -240,23 +232,9 @@ ad_btn-cont{
     text-decoration: none;
     color: black;
     margin-top: 50px;
-}
 
+}
 .link_rec a{
     text-decoration: none;
     color: black;
 }
-
-
-.slider .slider_item img{
-    max-width: 100%;
-
-}
-
-.slider .slick-next:before{
-    color: black;
-}
-
-.slider .slick-prev:before{
-    color: black;
-}c
