@@ -24,7 +24,7 @@ try:
 
     time.sleep(2)
 
-    driver.find_element(By.TAG_NAME, 'button').send_keys(Keys.PAGE_DOWN)
+    driver.find_element(By.ID, 'knopka').send_keys(Keys.PAGE_DOWN)
 
     time.sleep(2)
 
@@ -33,7 +33,7 @@ try:
 
     time.sleep(2)
 
-    image = driver.find_element(By.NAME, 'image').send_keys('C:/Users/chrom/Downloads/tst.jpg')
+    image = driver.find_element(By.NAME, 'image').send_keys('z')
 
     time.sleep(2)
 
